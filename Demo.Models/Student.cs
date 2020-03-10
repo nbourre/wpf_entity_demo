@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Demo.Models
 {
@@ -10,5 +11,7 @@ namespace Demo.Models
         public string Number { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public ICollection<Enrollment> Enrollments { get; set; }
     }
 }

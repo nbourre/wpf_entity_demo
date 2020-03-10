@@ -18,6 +18,7 @@ namespace wpf_entity_demo
         {
             base.OnStartup(e);
 
+            
             MainWindow win = new MainWindow();
 
             win.DataContext = new StudentsViewModel();

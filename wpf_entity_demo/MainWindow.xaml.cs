@@ -10,6 +10,8 @@ namespace wpf_entity_demo
         public MainWindow()
         {
             InitializeComponent();
+            
+            
         }
     }
 }

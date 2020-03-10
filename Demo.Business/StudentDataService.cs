@@ -19,7 +19,10 @@ namespace Demo.Business
 
         private void initValues()
         {
-            students = db.Students.ToList();
+            if (db.Database.CanConnect())
+            {
+                students = db.Students.ToList();
+            }
         }
 
         public IEnumerable<Student> GetAll()
